@@ -1,2 +1,2 @@
-# JavaFX
-All JavaFX learning projects
+# Configuration Server
+My configuration server
