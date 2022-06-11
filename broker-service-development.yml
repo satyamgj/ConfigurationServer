@@ -1,0 +1,27 @@
+spring:
+  kafka:
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      key-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    consumer:
+      group-id: consumer-group-1
+      enable-auto-commit: 'false'
+      auto-offset-reset: earliest
+      bootstrap-servers: 127.0.0.1:9092
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      properties:
+        spring:
+          json:
+            trusted:
+              packages: com.finmamba
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    bootstrap-servers: 127.0.0.1:9092
+    listener:
+      poll-timeout: 10000
+who:
+  am:
+    i: tester
+springdoc:
+  api-docs:
+    path: /api-docs
+  use-fqn: 'true'
