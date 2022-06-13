@@ -18,6 +18,19 @@ spring:
     bootstrap-servers: 127.0.0.1:9092
     listener:
       poll-timeout: 10000
+  datasource:
+    username: postgres
+    url: jdbc:postgresql://localhost:5432/FinMamba
+    password: admin
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          lob:
+            non_contextual_creation: 'true'
+    hibernate:
+      ddl-auto: none
 who:
   am:
     i: tester
