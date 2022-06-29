@@ -20,7 +20,7 @@ spring:
       poll-timeout: 10000
   datasource:
     username: postgres
-    url: jdbc:postgresql://localhost:5432/FinMamba
+    url: jdbc:postgresql://localhost:5432/qilegaldb
     password: satyam123
   jpa:
     properties:
