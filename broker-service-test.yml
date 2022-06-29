@@ -21,7 +21,7 @@ spring:
   datasource:
     username: postgres
     url: jdbc:postgresql://localhost:5432/FinMamba
-    password: postgres
+    password: satyam123
   jpa:
     properties:
       hibernate:
