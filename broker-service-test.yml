@@ -20,7 +20,7 @@ spring:
       poll-timeout: 10000
   datasource:
     username: postgres
-    url: jdbc:postgresql://kanjipgdb.postgres.database.azure.com:5432/postgres?sslmode=require 
+    url: jdbc:postgresql://kanjipgdb.postgres.database.azure.com/postgres?sslmode=require 
     password: MErcUry@012
   jpa:
     properties:
