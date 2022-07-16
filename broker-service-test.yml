@@ -31,7 +31,7 @@ spring:
             non_contextual_creation: 'true'
         enable_lazy_load_no_trans: 'true'
     hibernate:
-      ddl-auto: update
+      ddl-auto: none
   cache:
     type: redis
   redis:
