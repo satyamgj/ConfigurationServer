@@ -34,7 +34,7 @@ spring:
         format_sql: 'true'
     hibernate:
       ddl-auto: none
-   quartz:
+  quartz:
     job-store-type: jdbc
     properties:
       org:
@@ -42,7 +42,7 @@ spring:
           threadPool:
             threadCount: 50
         jobStore:
-          driverDelegateClass: org.quartz.impl.jdbcjobstore.PostgreSQLDelegate
+          driverDelegateClass: org.quartz.impl.jdbcjobstore.PostgreSQLDelegate 
 who:
   am:
     i: tester
