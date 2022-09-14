@@ -7,7 +7,7 @@ spring:
       group-id: consumer-group-1
       enable-auto-commit: 'false'
       auto-offset-reset: earliest
-      bootstrap-servers: localhost:9092
+      bootstrap-servers: 20.63.137.226:9092
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       properties:
         spring:
@@ -15,7 +15,7 @@ spring:
             trusted:
               packages: com.finmamba
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-    bootstrap-servers: localhost:9092
+    bootstrap-servers: 20.63.137.226:9092
     listener:
       poll-timeout: 10000
   datasource:
@@ -35,7 +35,7 @@ spring:
   cache:
     type: redis
   redis:
-    host: localhost
+    host: 20.63.137.226
     port: '6379'
 who:
   am:
@@ -46,6 +46,6 @@ springdoc:
   use-fqn: 'true'  
 
 redis:
-  hostname: localhost
+  hostname: 20.63.137.226
   port: '6379'
 
